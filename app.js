@@ -11,7 +11,7 @@ app.use(express.static('./public'));
 //routes
 app.use("/api/v1/tasks", tasks);
 
-const port = process.env.PORT 
+const port = process.env.PORT || 3000
 
 const start = async () => {
     try {
